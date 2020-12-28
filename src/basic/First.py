@@ -10,7 +10,7 @@ if __name__ == '__main__':
     w.resize(600, 400)
     # 移动窗口
     w.move(300, 300)
-
+    w.
     # 设置窗口标题
     w.setWindowTitle('第一个基于PyQt5的桌面应用')
     # 显示窗口

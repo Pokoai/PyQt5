@@ -54,6 +54,7 @@ class Ui_MainWindow(object):
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.toolBar.setWindowTitle(_translate("MainWindow", "toolBar"))
         self.actionNew.setText(_translate("MainWindow", "New"))
+        self.actionNew.setShortcut(_translate("MainWindow", "Ctrl+A"))
         self.actionOpen.setText(_translate("MainWindow", "Open"))
         self.actionClose.setText(_translate("MainWindow", "Close"))
 

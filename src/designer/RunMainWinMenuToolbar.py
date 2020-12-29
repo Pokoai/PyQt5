@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    mainWindow = QMainWindow()
+    mainWindow = QMainWin dow()
     ui = MainWinMenuToolbar.Ui_MainWindow()
     ui.setupUi(mainWindow)
     mainWindow.show()

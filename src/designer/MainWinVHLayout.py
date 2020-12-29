@@ -14,8 +14,12 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        self.webEngineView = QtWebEngineWidgets.QWebEngineView(self.centralwidget)
+        self.webEngineView.setGeometry(QtCore.QRect(110, 180, 351, 341))
+        self.webEngineView.setUrl(QtCore.QUrl("https://arctee.cn/"))
+        self.webEngineView.setObjectName("webEngineView")
         self.widget = QtWidgets.QWidget(self.centralwidget)
-        self.widget.setGeometry(QtCore.QRect(90, 110, 321, 121))
+        self.widget.setGeometry(QtCore.QRect(100, 20, 321, 121))
         self.widget.setObjectName("widget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.widget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -71,3 +75,4 @@ class Ui_MainWindow(object):
         self.label_3.setText(_translate("MainWindow", "年龄："))
         self.pushButton_2.setText(_translate("MainWindow", "确定"))
 
+from PyQt5 import QtWebEngineWidgets

@@ -9,7 +9,7 @@ class QuitApplication(QMainWindow):
         self.resize(300, 200)
 
         # 添加Button
-        self.button1 = QPushButton('退出应用程序')
+        self.button1 = QPus-hButton('退出应用程                                                                                                                   GH            序')
         # 绑定信号与槽
         self.button1.clicked.connect(self.onClick_Button)
 
@@ -39,3 +39,4 @@ if __name__ == '__main__':
 
     main.show()
     sys.exit(app.exec_())
+

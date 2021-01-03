@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>LayoutDemo</class>
+ <widget class="QMainWindow" name="LayoutDemo">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -10,16 +10,13 @@
     <height>600</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
-  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>160</y>
-      <width>344</width>
+      <x>50</x>
+      <y>130</y>
+      <width>504</width>
       <height>94</height>
      </rect>
     </property>
@@ -50,7 +47,10 @@
        <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
-          <string>sharp比</string>
+          <string>&amp;sharp比</string>
+         </property>
+         <property name="buddy">
+          <cstring>doubleSpinBox_sharp_max</cstring>
          </property>
         </widget>
        </item>
@@ -86,22 +86,22 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QDoubleSpinBox" name="doubleSpinBox"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_returns_max"/>
        </item>
        <item row="1" column="1">
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_2"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_returns_min"/>
        </item>
        <item row="2" column="0">
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_4"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_maxdrawdown_max"/>
        </item>
        <item row="2" column="1">
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_3"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_maxdrawdown_min"/>
        </item>
        <item row="3" column="0">
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_5"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_sharp_max"/>
        </item>
        <item row="3" column="1">
-        <widget class="QDoubleSpinBox" name="doubleSpinBox_6"/>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox_sharp_min"/>
        </item>
       </layout>
      </item>

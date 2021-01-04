@@ -21,7 +21,7 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
 
     # 设置应用图标
-    app.setWindowIcon(QIcon('./icons/sandiantu.ico'))
+    app.setWindowIcon(QIcon('./images/sandiantu.ico'))
 
     # 创建实例
     main = FirstMainWin()

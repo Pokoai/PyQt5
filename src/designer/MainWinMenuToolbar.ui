@@ -13,7 +13,19 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>29</y>
+      <width>301</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="MaingridLayout"/>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -27,11 +39,11 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionNew"/>
+    <addaction name="fileNewAction"/>
     <addaction name="separator"/>
-    <addaction name="actionOpen"/>
+    <addaction name="fileOpenAction"/>
     <addaction name="separator"/>
-    <addaction name="actionClose"/>
+    <addaction name="fileCloseAction"/>
    </widget>
    <widget class="QMenu" name="menuedit">
     <property name="title">
@@ -52,28 +64,35 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
-   <addaction name="actionNew"/>
-   <addaction name="separator"/>
-   <addaction name="actionOpen"/>
-   <addaction name="separator"/>
-   <addaction name="actionClose"/>
+   <addaction name="addWinAction"/>
   </widget>
-  <action name="actionNew">
+  <action name="fileNewAction">
    <property name="text">
     <string>New</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+A</string>
+    <string>Alt+N</string>
    </property>
   </action>
-  <action name="actionOpen">
+  <action name="fileOpenAction">
    <property name="text">
     <string>Open</string>
    </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
   </action>
-  <action name="actionClose">
+  <action name="fileCloseAction">
    <property name="text">
     <string>Close</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+C</string>
+   </property>
+  </action>
+  <action name="addWinAction">
+   <property name="text">
+    <string>添加窗体</string>
    </property>
   </action>
  </widget>

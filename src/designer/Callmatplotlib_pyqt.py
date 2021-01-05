@@ -13,6 +13,8 @@ class MyMainWindow(QMainWindow, Ui_Form):
     def __init__(self):
         super(MyMainWindow, self).__init__()
         self.setupUi(self)
+        self.matplotlibwidget_dynamic.setVisible(False)
+        self.matplotlibwidget_static.setVisible(False)
 
         # 绑定信号与槽
         self.showStaticButton.clicked.connect(self.buttonStatic_Clicked)
@@ -20,9 +22,11 @@ class MyMainWindow(QMainWindow, Ui_Form):
 
     # 槽函数
     def buttonStatic_Clicked(self):
+        self.matplotlibwidget_static.setVisible(True)
         self.matplotlibwidget_static.mpl.start_static_plot()
 
     def buttonDynamic_Clicked(self):
+        self.matplotlibwidget_dynamic.setVisible(True)
         self.matplotlibwidget_dynamic.mpl.start_dynamic_plot()
 
 if __name__ == '__main__':

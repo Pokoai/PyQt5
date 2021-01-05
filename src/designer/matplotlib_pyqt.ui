@@ -18,16 +18,16 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>411</width>
-     <height>261</height>
+     <width>481</width>
+     <height>271</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="showStaticButton">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>120</y>
+     <x>510</x>
+     <y>100</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -39,8 +39,8 @@
   <widget class="QPushButton" name="showDynamicButton">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>340</y>
+     <x>510</x>
+     <y>390</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -52,10 +52,10 @@
   <widget class="MatplotlibWidget" name="matplotlibwidget_dynamic" native="true">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>260</y>
-     <width>371</width>
-     <height>301</height>
+     <x>-10</x>
+     <y>270</y>
+     <width>491</width>
+     <height>291</height>
     </rect>
    </property>
   </widget>

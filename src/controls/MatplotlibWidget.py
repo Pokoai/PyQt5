@@ -46,6 +46,7 @@ class MyMplCanvas(FigureCanvas):
         self.axes.set_ylabel('静态图：Y轴')
         self.axes.set_xlabel('静态图：X轴')
         self.axes.grid(True)
+        self.draw()
 
     '''启动绘制动态图'''
 
@@ -80,7 +81,7 @@ class MatplotlibWidget(QWidget):
         self.layout = QVBoxLayout(self)
         self.mpl = MyMplCanvas(self, width=5, height=4, dpi=100)
         # self.mpl.start_static_plot() # 如果你想要初始化的时候就呈现静态图，请把这行注释去掉
-        self.mpl.start_dynamic_plot() # 如果你想要初始化的时候就呈现动态图，请把这行注释去掉
+        # self.mpl.start_dynamic_plot() # 如果你想要初始化的时候就呈现动态图，请把这行注释去掉
         self.mpl_ntb = NavigationToolbar(self.mpl, self)  # 添加完整的 toolbar
 
         self.layout.addWidget(self.mpl)
@@ -90,7 +91,7 @@ class MatplotlibWidget(QWidget):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ui = MatplotlibWidget()
-    # ui.mpl.start_static_plot()  # 测试静态图效果
+    ui.mpl.start_static_plot()  # 测试静态图效果
     # ui.mpl.start_dynamic_plot() # 测试动态图效果
     ui.show()
     sys.exit(app.exec_())
